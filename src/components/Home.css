@@ -13,7 +13,9 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-background-color: aquamarine;
+background-image: url("../images/Hercule.png");
+background-repeat: no-repeat;
+background-size: cover;
 width: 50%;
 height: 100vh;
 color: black;

@@ -9,8 +9,8 @@ function Navbar() {
         <div className="navbar__container">
             {navItems.map((item) => {
                 return (
-                    <Link to={`/${item.ref}`}>
-                        <p>{item.title}</p>
+                    <Link className="nav-link" to={`/${item.ref}`}>
+                        <p className="nav-link__title">{item.title}</p>
                     </Link>
 
 

@@ -1,9 +1,25 @@
 .navbar__container{
   display: flex;
-  gap: 15px;  
+  gap: 15px;
+  position: absolute;
+  top: 10px;
+  margin-left: 5em;
+  
   
 }
+.navbar__containerbg{
+  background-color: aliceblue;
+}
 
-.navbar__title{
-    font-size: 1.2em;
+
+
+.nav-link__title{
+  font-size: 1em;
+  font-weight: 600;
+}
+
+.nav-link{
+  color: black;
+  text-decoration: none;
+  
 }

@@ -1,6 +1,17 @@
 import "./Home.css"
 import { Link } from "react-router-dom"
+
+import styled from "styled-components"
+
+const Title = styled.h2`
+font-size: 2em;
+margin: 2px 0;
+font-weight: 700;
+color: white;
+`
+
 function Home() {
+
 
     return (
         <div className="home__container">
@@ -8,7 +19,7 @@ function Home() {
                 <Link className="home__hero-left" to="/about">
                     <div >
                         <div className="home__hero-left-text-container">
-                            <h1 >À propos de nous</h1>
+                            <Title >À propos de nous</Title>
                         </div>
 
                     </div>
@@ -28,7 +39,6 @@ function Home() {
 
 
                 </Link>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/9YffrCViTVk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
             </div>
 

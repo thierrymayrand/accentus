@@ -29,8 +29,8 @@ function Home() {
                     <div >
                         <div className="home__hero-right-text-container">
                             <div>
-                                <h2 className="home__hero-right-title">Contactez Nous</h2>
-                                <p className="home__hero-right-p">La solution</p>
+                                <Title>Contactez Nous</Title>
+
                             </div>
 
                         </div>

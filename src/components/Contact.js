@@ -1,4 +1,6 @@
 import styled from "styled-components"
+import axios from "axios"
+import { useState } from "react"
 
 const MainContainer = styled.div`
 display: flex;
@@ -79,15 +81,39 @@ font-size: 18px;
 padding: 10px;
 height: 200px;
 `
+
+
+
+
 function Contact() {
+
+    const envoye = () => {
+        axios.post('https://hook.us1.make.com/nl77qhrt5wa9jl0e9zjxao3vaj8pw762', {
+            email,
+            message,
+        })
+            .then(response => {
+                console.log(response)
+            })
+    }
+
+    const emailHandler = (event) => {
+        setEmail(event.target.value)
+    }
+    const messageHandler = (event) => {
+        setMessage(event.target.value)
+    }
+    const [email, setEmail] = useState("")
+    const [message, setMessage] = useState("")
+
     return (
         <MainContainer>
             <VCH100>
                 <VC>
                     <Title>Contactez nous via email</Title>
-                    <Input type="text" placeholder="Email" />
-                    <TextArea type="text" placeholder="Comment pouvons nous vous assister aujourd'hui ?" />
-                    <Button>Envoye</Button>
+                    <Input onChange={emailHandler} type="text" placeholder="Email" />
+                    <TextArea onChange={messageHandler} type="text" placeholder="Comment pouvons nous vous assister aujourd'hui ?" />
+                    <Button onClick={envoye}>Envoye</Button>
                 </VC>
             </VCH100>
 

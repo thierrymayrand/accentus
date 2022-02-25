@@ -1,0 +1,9 @@
+.navbar__container{
+  display: flex;
+  gap: 15px;  
+  
+}
+
+.navbar__title{
+    font-size: 1.2em;
+}
